@@ -1,0 +1,15 @@
+[data-view-container] {
+  transition: 0.2s all ease-in-out;
+  pointer-events: all;
+}
+[data-view-container].on {
+  opacity: 0;
+  pointer-events: none;
+}
+
+[data-view-module] {
+  display: none !important;
+}
+[data-view-module].active {
+  display: flex !important;
+}

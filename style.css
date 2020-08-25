@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .login {
+  transition: 0.2s all ease-in-out;
+}
+
+body.color-3 .login_fields__submit input {
+  transition: 0.2s all ease-in-out;
+}
+
+body.color-3 .login {
+  border-top: 2px solid #e1ef73;
+}
+
+body.color-3 .login_fields__submit input {
+  border: 2px solid #5ab799;
+  color: #5ab799;
+}
+
+body.color-3 .login_fields__submit input:hover {
+  background: #5ab799;
+  color: #fff;
+}
+
+body.color-3 .login {
+  border-top: 2px solid #e1ef73;
+}
+
+body.color-3 .login_fields__submit input {
+  border: 2px solid #5ab799;
+  color: #5ab799;
+}
+
+body.color-3 .login_fields__submit input:hover {
+  background: #5ab799;
+  color: #fff;
+}
+
+body.color-2 .login {
+  border-top: 2px solid #5782e4;
+}
+
+body.color-2 .login_fields__submit input {
+  border: 2px solid #b54ad8;
+  color: #b54ad8;
+}
+
+body.color-2 .login_fields__submit input:hover {
+  background: #b54ad8;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 900px;
+}
+
+.user-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main {
+  width: 100%;
+}
+
+.card {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: calc(((100vh / 3) - (2 * 50px)) - 22px);
+  margin: 0 auto;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  padding: 20px 124px;
+  justify-content: space-between;
+  box-shadow: 4px 3px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.25s all ease-in-out;
+}
+
+.card > p {
+  font-size: 30px;
+  font-weight: 300;
+  margin-left: 20px;
+  color: #ddd;
+}
+
+.card + .card {
+  margin-top: 50px;
+}
+
+.icon-block {
+  width: clamp(60px, 9vw, 110px);
+  height: clamp(60px, 9vw, 110px);
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(50px, 4vw, 57px);
+  font-weight: 800;
+  color: #aaa;
+
+  border: double 4px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transition: 0.25s all ease-in-out;
+}
+
+.card:nth-of-type(1) .icon-block {
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #EA5C54,#bb6dec);
+}
+
+.card:nth-of-type(2) .icon-block {
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #5782e4 ,#b54ad8);
+}
+
+.card:nth-of-type(3) .icon-block {
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #e1ef73 ,#5ab799 );
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.card:hover .icon-block {
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  color: #555;
+  opacity: 0.8;
+}
+
+.color1 {
+  background: linear-gradient(135deg, #EA5C54 0%, #bb6dec 100%);
+}
+.color2 {
+  background: linear-gradient(135deg, #5782e4 0%, #b54ad8 100%);
+}
+.color3 {
+  background: linear-gradient(135deg, #e1ef73 0%, #5ab799 100%);
+}
+.color1, .color2, .color3 {
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+.color1.active, .color2.active, .color3.active {
+  opacity: 1;
+}
+/* def background: linear-gradient(135deg, #ffc5c0 0%, #a992b7 100%); */
+/*2 background: linear-gradient(135deg, #5782e4 0%, #b54ad8 100%); */
+/*3 background: linear-gradient(135deg, #e1ef73 0%, #5ab799 100%); */
